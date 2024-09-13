@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: admin-service
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/admin_service
+    username: postgres
+    password: Neo1604@
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    hikari:
+      maximumPoolSize: 5
+      connection-timeout: 5000
