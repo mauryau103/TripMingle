@@ -1,3 +1,7 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /mingle
 spring:
   application:
     name: user-service
@@ -13,3 +17,12 @@ spring:
     hikari:
       maximumPoolSize: 5
       connection-timeout: 5000
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "*"
